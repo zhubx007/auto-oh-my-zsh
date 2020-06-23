@@ -30,6 +30,7 @@ chsh -s /bin/zsh
 
 # 设置ys主题
 sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"ys\"/g" $HOME/.zshrc
+# sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"philips\"/g" $HOME/.zshrc
 
 # 安装配置autojump
 sudo apt install autojump -y
