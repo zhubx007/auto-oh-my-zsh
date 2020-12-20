@@ -20,7 +20,7 @@ sudo apt install zsh -y
 sudo apt install git -y
 
 # 克隆oh-my-zsh库
-git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh
 
 #拷贝.zshrc配置文件
 cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
@@ -41,7 +41,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 echo "source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>~/.zshrc
 
 # 安装配置语法历史
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 echo "source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >>~/.zshrc
 
 # 重启机器生效
