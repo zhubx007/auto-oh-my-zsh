@@ -22,7 +22,8 @@ cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
 
 chsh -s /bin/zsh
 
-sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"ys\"/g" $HOME/.zshrc
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k
+sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"powerlevel10k\/powerlevel10k\"/g" $HOME/.zshrc
 # sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"philips\"/g" $HOME/.zshrc
 
 sudo yum install autojump -y
